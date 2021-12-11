@@ -1,7 +1,7 @@
 {
   "name": "weight-md-app",
   "version": "0.1.0",
-  "homepage": "https://sethblumer1.github.io/weight-md",
+  "homepage": "https://sethblumer1.github.io/weight-md-app",
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
@@ -18,8 +18,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
