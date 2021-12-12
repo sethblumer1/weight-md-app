@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,KAIE,6CAEF","file":"main.7b529834.chunk.css","sourcesContent":["body {\n  /* margin: 15px !important;\n  margin-left: 100px !important;\n  margin-right: 100px !important; */\n  font-family: 'Montserrat', sans-serif !important;\n  /* background-color: #ebecf0 !important; */\n}\n"]}

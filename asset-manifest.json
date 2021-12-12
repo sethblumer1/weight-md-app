@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/weight-md-app/static/css/main.7c7550e2.chunk.css",
-    "main.js": "/weight-md-app/static/js/main.8b9a554c.chunk.js",
-    "main.js.map": "/weight-md-app/static/js/main.8b9a554c.chunk.js.map",
+    "main.css": "/weight-md-app/static/css/main.7b529834.chunk.css",
+    "main.js": "/weight-md-app/static/js/main.a22496c2.chunk.js",
+    "main.js.map": "/weight-md-app/static/js/main.a22496c2.chunk.js.map",
     "runtime-main.js": "/weight-md-app/static/js/runtime-main.7aec8fa8.js",
     "runtime-main.js.map": "/weight-md-app/static/js/runtime-main.7aec8fa8.js.map",
-    "static/js/2.aa006293.chunk.js": "/weight-md-app/static/js/2.aa006293.chunk.js",
-    "static/js/2.aa006293.chunk.js.map": "/weight-md-app/static/js/2.aa006293.chunk.js.map",
+    "static/js/2.609cf74a.chunk.js": "/weight-md-app/static/js/2.609cf74a.chunk.js",
+    "static/js/2.609cf74a.chunk.js.map": "/weight-md-app/static/js/2.609cf74a.chunk.js.map",
     "index.html": "/weight-md-app/index.html",
-    "static/css/main.7c7550e2.chunk.css.map": "/weight-md-app/static/css/main.7c7550e2.chunk.css.map",
-    "static/js/2.aa006293.chunk.js.LICENSE.txt": "/weight-md-app/static/js/2.aa006293.chunk.js.LICENSE.txt"
+    "static/css/main.7b529834.chunk.css.map": "/weight-md-app/static/css/main.7b529834.chunk.css.map",
+    "static/js/2.609cf74a.chunk.js.LICENSE.txt": "/weight-md-app/static/js/2.609cf74a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7aec8fa8.js",
-    "static/js/2.aa006293.chunk.js",
-    "static/css/main.7c7550e2.chunk.css",
-    "static/js/main.8b9a554c.chunk.js"
+    "static/js/2.609cf74a.chunk.js",
+    "static/css/main.7b529834.chunk.css",
+    "static/js/main.a22496c2.chunk.js"
   ]
 }
