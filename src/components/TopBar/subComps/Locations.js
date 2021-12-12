@@ -1,10 +1,22 @@
-import { Button, Menu, MenuItem, Typography, Popper, Box } from '@mui/material';
-import PopupState, {
-  bindTrigger,
-  bindMenu,
-  bindToggle,
-} from 'material-ui-popup-state';
-import { ArrowDropUp, ArrowDropDown } from '@mui/icons-material';
+import {
+  Button,
+  Menu,
+  MenuItem,
+  Typography,
+  Paper,
+  Box,
+  Chip,
+  Fab,
+  Stack,
+} from '@mui/material';
+import {
+  ArrowDropUp,
+  ArrowDropDown,
+  PhoneIphone,
+  Phone,
+  AccessTime,
+  LocationOn,
+} from '@mui/icons-material';
 
 import React, { useState } from 'react';
 
@@ -42,7 +54,9 @@ function Locations() {
           sx={{
             display: 'flex',
             alignItems: 'center',
+            justifyContent: 'center',
           }}
+          mb={2}
         >
           <Button
             id="basic-button"
@@ -62,7 +76,7 @@ function Locations() {
               },
               marginRight: '5px',
             }}
-            variant="outlined"
+            variant="text"
           >
             Locations {arrowDown ? <ArrowDropDown /> : <ArrowDropUp />}
           </Button>
@@ -80,8 +94,80 @@ function Locations() {
             <MenuItem onClick={handleClose}>Queens</MenuItem>
             <MenuItem onClick={handleClose}>West Hempstead</MenuItem>
           </Menu>{' '}
-          <Typography>{currLocation}</Typography>
+          {currLocation !== '' ? (
+            <Chip
+              label={currLocation}
+              variant="outlined"
+              onClick={handleClick}
+              sx={{ borderColor: '#0DAD6F' }}
+            />
+          ) : (
+            <></>
+          )}
         </Box>
+        {/* Paper that show hours and phone number for WeightMD */}
+        {currLocation == 'Uptown Manhattan' ? (
+          <Paper elevation={2}>
+            {' '}
+            {/* For hours */}
+            <Box
+              sx={{
+                display: 'flex',
+                // flexDirection: 'column',
+                justifyContent: 'space-evenly',
+                alignItems: 'flex-start',
+              }}
+              pt={2}
+              pb={2}
+            >
+              <Fab color="#f4f0ec" aria-label="call" size="small">
+                <LocationOn />
+              </Fab>
+              <Stack spacing={0}>
+                <Typography>230 E 79th St, Unit 2</Typography>
+                <Typography>New York, NY 10021</Typography>
+              </Stack>
+            </Box>
+            <Box
+              sx={{
+                display: 'flex',
+                // flexDirection: 'column',
+                justifyContent: 'flex-start',
+                alignItems: 'center',
+              }}
+              pt={2.5}
+              pb={3}
+              ml={2.5}
+            >
+              <Fab color="#f4f0ec" aria-label="call" size="small">
+                <PhoneIphone />
+              </Fab>
+              <Typography pl={2}>(212) 876-8181</Typography>
+            </Box>
+            {/* For hours */}
+            <Box
+              sx={{
+                display: 'flex',
+                // flexDirection: 'column',
+                justifyContent: 'space-evenly',
+                alignItems: 'flex-start',
+              }}
+              pt={2}
+              pb={2}
+            >
+              <Fab color="#f4f0ec" aria-label="call" size="small">
+                <AccessTime />
+              </Fab>
+              <Stack spacing={0}>
+                <Typography>Tue. 3:00PM-5:00PM</Typography>
+                <Typography>Thu. 9:00AM-1:00PM</Typography>
+                <Typography>Sat. 3:00PM-5:00PM</Typography>
+              </Stack>
+            </Box>
+          </Paper>
+        ) : (
+          <></>
+        )}
       </div>
     </Box>
   );

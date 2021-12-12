@@ -4,23 +4,9 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
-import StarIcon from '@mui/icons-material/StarBorder';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
 import Locations from './components/TopBar/subComps/Locations';
-import {
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  Paper,
-  Stack,
-  Item,
-} from '@mui/material';
 
 // Components for home page
 import NavBar from './components/TopBar/NavBar';
@@ -74,10 +60,11 @@ function App() {
           <Box
             ml={1}
             sx={{
-              border: '1px solid black',
+              // border: '1px solid black',
               borderRadius: '5px',
               boxShadow:
                 '-4px -4px 12px rgb(255 255 255), 4px 4px 12px rgb(121 130 160 / 75%)',
+              backgroundColor: 'white',
             }}
           >
             {' '}
